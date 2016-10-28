@@ -1630,7 +1630,7 @@ Data.prototype = _.create(
 
         load: function() {
             var _self = this;
-            $.getJSON( "/data.json?t="+(new Date()),function(json) {
+            $.getJSON( "./data.json?t="+(new Date()),function(json) {
                 _self.update(json);
                 _self.save();
             }).fail(function(jqxhr, textStatus, error ) {
