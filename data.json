@@ -1,11 +1,11 @@
 {
     "user": {
 
-        "investment": 1000000000000,
+        "investment": 767000000000,
         "annual growth rate": 0.0,
-        "target": 0.05,
-        "starting year": 2016,
-        "target year": 2020,
+        "target": 0.02,
+        "starting year": 2017,
+        "target year": 2022,
         "comparison": 80000000000,
 
         "coalPlant": 272000,
