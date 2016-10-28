@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+
+  <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WWF's Renewable Energy Calculator</title>
+
+    <link rel="stylesheet" media="screen" href="css/handsontable.full.min.css">
+    <link rel="stylesheet" href="css/app.css" />
+
+    
+    <script src="bower_components/modernizr/modernizr.js"></script>
+	  
+	  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+	  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+	  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+	  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+	  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+	  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+	  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+	  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+	  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+	  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+	  <link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+	  <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+	  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+	  <link rel="manifest" href="favicons/manifest.json">
+	  <link rel="shortcut icon" href="favicons/favicon.ico">
+	  <meta name="msapplication-TileColor" content="#ffffff">
+	  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+	  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+	  <meta name="theme-color" content="#ffffff">
+    
+  </head>
+  <body>
+
+
+  <body>
+
+    <div class="page-content">
+      <div class="wrapper">
+        <header class="row photo">
+  <div class="medium-12   columns  ">
+
+      <div class="logo">
+        <img src="img/WWF.png" alt="WWF Logo" />
+		  </div>
+    <h1>Estimate the climate benefits of investing in renewable energy</h1>
+  </div>
+
+
+</header>
+
+<div class="row whitewrap margTop">
+  <div class="medium-12 large-10 columns large-offset-1 bigPad">
+
+    <h2>WELCOME!</h2>
+<p><img src="img/SVG/planet.svg" class="left paddingRight paddingBottom" width="250px" />What could be the potential climate benefits if your investment fund starts to put a certain percentage of its money directly into renewable energy?
+
+<p>The calculator allows you to estimate how much a given amount of investment can contribute to build a more sustainable future where renewable sources of energy, such as wind, sun and water, provide our societies with the necessary energy.</p>
+
+<p>To use this tool, you only need a few data inputs on the size of the investor, and the investment's period, and our modelling tool will do the rest. You can also change all parameters in the table below under “background data”.</p>
+
+  </div>
+</div>
+
+<div class="row whitewrap margTop">
+  
+<div class="large-12 columns sidebar">
+      <h2>Main results produced by the webcalculator</h2>
+</div>
+
+<div class="medium-12 large-10 columns large-offset-1">
+<p>The following infographics give you an overview of the main results you can get from the calculator. How many new renewable power plants? How much new clean electricity? And how much greenhouse gases averted?</p>
+</div>
+
+  <div class="medium-4 columns  sidebar whitewrap">
+    <h3 class="text-center">New installed capacity <a href="index.html#" data-reveal-id="installedModal" class="modalLink">i</a></h3>
+<div id="installedModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+	<h2 id="installedTitle">New installed capacity</h2>
+	<p>The model estimates how much new capacity is installed, given the chosen amount of investment and the energy mix. This estimate is calculated using IPCC’s  figures “overnight costs” (in USD/kW), which indicates the capital cost, excluding finance cost for construction. In short, it indicates the cost of building a power plant overnight as if no interest were incurred. Please refer to the report for a detailed explanation of the methodology, and the limits of the estimate. Source of data:
+    <a target="_blank" href="http://www.ipcc.ch/pdf/assessment-report/ar5/wg3/ipcc_wg3_ar5_annex-iii.pdf">IPCC, AR5, Working Group 3, Annex III</a></p>
+
+  <p>The result is compared with the average capacity of a wind turbine, which is approximateløy 3 MW. Source: The European Wind Energy Association<a href="http://www.euronuclear.org/info/encyclopedia/n/nuclear-power-plant-world-wide.htm" target="_blank">http://www.ewea.org/wind-energy-basics/faq/</a>
+  </p>
+
+  <p>The result is also compared with the average nameplate capacity of a coal power generator (which might be different from a coal power plant, which can include more than 1 generator) in the US, which is 272 MW. Source: US’s Energy Information Administration,
+    <a href="http://www.eia.gov/electricity/annual/" target="_blank">http://www.eia.gov/electricity/annual/html/epa_04_03.html</a> EIA (Table 4.3)</p>
+
+	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+    <hr />
+
+	  <h2 class="greened "><img class="icon" src="img/SVG/bolt.svg" alt="Bolt" /><span class="gigawatts"></span> KW<img class="icon" src="img/SVG/bolt.svg" alt="Bolt" /></h2>
+	  <p>Equivalent (on average) to the installed capacity of <span class="greened nuclearReactors nowrap "></span> wind turbines or <span class="greened coalPlants nowrap"></span> coal-fired power generators.</p>
+	  <img src="img/SVG/newtown.svg"/>
+
+  </div>
+
+  <div class="medium-4 columns sidebar  whitewrap">
+    <h3 class="text-center">Electricity generation<a href="index.html#" data-reveal-id="renewableModal" class="modalLink">i</a></h3>
+<div id="renewableModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+	<h2 id="renewableTitle">Electricity generation</h2>
+  <p>To illustrate the potential effect on greenhouse gas emissions we ask the following question: what are the associated emissions if the electricity generated from the investment would have been generated by a mix of fossil fuels? The calculations are based on the emissions factors provided by IPCC (in grams CO2eq. /kWh). The results are based on life-cycle emissions generated by the power plants funded by the investor..</p>
+
+	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+    <hr />
+
+    <h2 class="blued twhImpact">
+  <span class="amount nowrap"> KWh</span>
+</h2>
+<p>
+<span class="blued amount nowrap">2200</span> KWh annually,
+  every year for <span class="blued impactYears" ></span> years. Enough electricity for <span class="blued EUCitizens nowrap"></span> typical European citizens, every year for <span class="blued impactYears elYears nowrap"></span> years. </p>
+
+<h2><img class="battery" src="img/SVG/battery.svg"></h2>
+
+  </div>
+
+  <div class="medium-4 columns sidebar  whitewrap">
+    <h3 class="text-center">Averted emissions based on <span class="impactYears darkgreened" ></span>  years of investment<a href="index.html#" data-reveal-id="impactModal" class="modalLink">i</a></h3>
+<div id="impactModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+	<h2 id="impactTitle">Averted emissions based on <span class="impactYears darkgreened" ></span> years of investment</h2>
+  <p>To illustrate the potential effect on greenhouse gas emissions we ask the following question: What are the associated emissions if the electricity generated from the investment would have been generated by a mix of fossil fuels instead? The calculations are based on the emissions factors provided by <a href="http://srren.ipcc-wg3.de/report/IPCC_SRREN_Annex_II.pdf" target="_blank">IPCC</a> (in grams CO2 equivalent/kWh). The results are based on life-cycle emissions generated by the power plants funded by the investor.
+</p>
+
+	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+    <hr />
+
+    <h2 class="darkgreened "><span class="EmissionsAvoided"></span> t CO2eq</h2>
+<p><span class="EmissionsAvoided nowrap">tonnes CO2 equivalent</span> averted by investing in renewables instead of fossil fuels. Equivalent to <span class="timesWorld darkgreened">4</span>&nbsp;times Norway's annual GHG emissions, or <span class=" timesUS darkgreened"></span> times US's annual GHG emissions.</p>
+<img src="img/SVG/Co2.svg" class="globe" width="45%" />
+
+  </div>
+<hr />
+
+<div class="medium-12 large-10 columns large-offset-1">
+<p>You can download all graphical elements and tables showing the results of your analysis, for use in both external and internal communication products, including social media.</p>
+<p><i>For information about the limitation of the calculation produced by this tool, please refer to the methodology chapter in the report for more details.</i></p>
+</div>
+
+</div>
+
+
+
+<div class="row whitewrap margTop">
+	<div class="medium-12 large-10 columns large-offset-1 bigPad">
+    <h2 id="inputs">Data inputs: it's your turn!</h2>
+<p>Now you have the possibility to create your own case study! Simply edit the following fields. The changes are automatically saved in your browser, and you can go back to default just by pressing the “Reset” button.</p>
+
+<p>For illustrative purposes, we have inserted similar numbers to the one we use in a case study of  <a href="http://www.nbim.no/en/" target="_blank">Norway’s sovereign wealth fund</a>, which own almost 1 trillion USD in assets. Change these numbers with your own to create your personalized case.</p>
+
+<form id="InputsForm">
+
+
+    <p>
+      <label for="Investment">1) Insert the total capital holding of the investment fund(s) (In US dollars)</label>
+      <input id="Investment" type="text" data-id="investment" name="totalFund" data-format="0,000"   value="" />
+      <label for="Investment">USD.</label>
+    </p>
+
+    <p>
+      <label for="InvestPercentage">2) Specify the percentage share of the fund’s total capital holding to be invested directly in renewable energy projects:</label>
+      <input id="InvestPercentage" data-id="target" type="text" name="investPercentage" data-format="0,000.00" >
+      <label for="InvestPercentage"> percent of fund’s total value.</label>
+    </p>
+
+    <p>
+      <label for="StartingYear">3) The fund will start to invest in the year</label>
+      <input type="number" id="StartingYear"  maxlength="4" value="2016" data-id="starting year" name="start">
+      <label for="TargetYear">and the target to be reached in the year (max 2035)</label>
+      <input type="number"   id="TargetYear" maxlength="4" value="2020" data-id="target year" name="target">
+      <label for="TargetYear">.</label>
+    </p>
+
+      <p><div class="inpne-box"> <a href="index.html#" id="AppRest" class="button">Reset</a></div> </p>
+</form>
+
+  </div>
+</div>
+
+<div class="row whitewrap margTop">
+	<div class="medium-12 large-10 columns large-offset-1 bigPad">
+
+    <h2>Summary of results: Infographic</h2>
+
+    <p>This is a graphical summary of all the main results. Elements are pre-arranged so that you can simply take a screenshot of the page, and have a product ready to be used.
+  </div>
+</div>
+
+<div class="row papered">
+  <div class="large-12 columns">
+    <div class="earth  teckbox">
+	    
+<div class="medium-5 columns earthBox noSidePadd">
+	<h2 class="start"></h2>
+	<img class="spin" src="img/SVG/earth1.svg" />
+</div>
+
+<div class="dollas">
+	<img src="img/SVG/dollas.svg" />
+	<h3><span class="modifier" id="budget1"></span> in renewable energy</h3>
+</div>
+
+<div class="medium-5 columns earthBox noSidePadd medium-offset-2">
+	<h2>
+	<h2 class="targetYears"></h2>
+  </h2>
+	<img class="spin" src="img/SVG/earth2.svg" />
+</div>
+
+    </div>
+    <div class="teck  teckbox">
+      <h3 class="text-center">The dividing of investments in the various technologies<a href="index.html#" data-reveal-id="techModal" class="modalLink">i</a></h3>
+<div id="techModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+	<h2 id="modalTitle">The investment is allocated to various technologiess</h2>
+	<p>The default mix of renewable power technologies is based on the latest energy scenarios of the
+    International Energy Agency (IEA, World Energy Outlook 2014).The figures are based on what is
+    needed to be installed worldwide, and refer to the first year of the chosen period.
+    Data is based on the IEA’s New Policy Scenario until 2020, and the 450 scenario until 2035.
+    For more info on the scenarios,
+    see: <a target="_blank" href="http://www.iea.org/publications/scenariosandprojections/">http://www.iea.org/publications/scenariosandprojections/</a></p>
+	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+
+<img src="img/SVG/techs.svg" />
+<p data-id="4" id="hydro"><span>28%</span><br />hydro</p>
+<p data-id="5" id="bio"><span>6%</span><br />bioenergy</p>
+<p data-id="6" id="wind"><span>36%</span><br />wind</p>
+<p data-id="7" id="geo"><span>1%</span><br />geothermal</p>
+<p data-id="8" id="solarpv"><span>29%</span><br />solar pv</p>
+<p data-id="9" id="solarp"><span>1%</span><br />concentrated<br />solar power</p>
+
+    </div>
+  </div>
+
+
+</div>
+
+<div class="row papered">
+
+  <div class="large-12 columns sidebar whitewrap">
+    <div>
+
+      <h3 class="text-center">New installed capacity <a href="index.html#" data-reveal-id="installedModal" class="modalLink">i</a></h3>
+<div id="installedModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+	<h2 id="installedTitle">New installed capacity</h2>
+	<p>The model estimates how much new capacity is installed, given the chosen amount of investment and the energy mix. This estimate is calculated using IPCC’s  figures “overnight costs” (in USD/kW), which indicates the capital cost, excluding finance cost for construction. In short, it indicates the cost of building a power plant overnight as if no interest were incurred. Please refer to the report for a detailed explanation of the methodology, and the limits of the estimate. Source of data:
+    <a target="_blank" href="http://www.ipcc.ch/pdf/assessment-report/ar5/wg3/ipcc_wg3_ar5_annex-iii.pdf">IPCC, AR5, Working Group 3, Annex III</a></p>
+
+  <p>The result is compared with the average capacity of a wind turbine, which is approximateløy 3 MW. Source: The European Wind Energy Association<a href="http://www.euronuclear.org/info/encyclopedia/n/nuclear-power-plant-world-wide.htm" target="_blank">http://www.ewea.org/wind-energy-basics/faq/</a>
+  </p>
+
+  <p>The result is also compared with the average nameplate capacity of a coal power generator (which might be different from a coal power plant, which can include more than 1 generator) in the US, which is 272 MW. Source: US’s Energy Information Administration,
+    <a href="http://www.eia.gov/electricity/annual/" target="_blank">http://www.eia.gov/electricity/annual/html/epa_04_03.html</a> EIA (Table 4.3)</p>
+
+	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+	    <h2 class="greened "><img class="icon" src="img/SVG/bolt.svg" alt="Bolt" /><span class="gigawatts"></span> KW<img class="icon" src="img/SVG/bolt.svg" alt="Bolt" /></h2>
+	  <p>Equivalent (on average) to the installed capacity of <span class="greened nuclearReactors nowrap "></span> wind turbines or <span class="greened coalPlants nowrap"></span> coal-fired power generators.</p>
+	  <img src="img/SVG/newtown.svg" width="60%" />
+
+      <hr />
+    </div>
+    <div>
+      <h3 class="text-center">Electricity generation<a href="index.html#" data-reveal-id="renewableModal" class="modalLink">i</a></h3>
+<div id="renewableModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+	<h2 id="renewableTitle">Electricity generation</h2>
+  <p>To illustrate the potential effect on greenhouse gas emissions we ask the following question: what are the associated emissions if the electricity generated from the investment would have been generated by a mix of fossil fuels? The calculations are based on the emissions factors provided by IPCC (in grams CO2eq. /kWh). The results are based on life-cycle emissions generated by the power plants funded by the investor..</p>
+
+	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+	    <h2 class="blued twhImpact">
+  <span class="amount nowrap"> KWh</span>
+</h2>
+<p>
+<span class="blued amount nowrap">2200</span> KWh annually,
+  every year for <span class="blued impactYears" ></span> years. Enough electricity for <span class="blued EUCitizens nowrap"></span> typical European citizens, every year for <span class="blued impactYears elYears nowrap"></span> years. </p>
+
+<h2><img class="battery" src="img/SVG/battery.svg" width="35%"></h2>
+
+      <hr />
+    </div>
+    <div>
+      <h3 class="text-center">Averted emissions based on <span class="impactYears darkgreened" ></span>  years of investment<a href="index.html#" data-reveal-id="impactModal" class="modalLink">i</a></h3>
+<div id="impactModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+	<h2 id="impactTitle">Averted emissions based on <span class="impactYears darkgreened" ></span> years of investment</h2>
+  <p>To illustrate the potential effect on greenhouse gas emissions we ask the following question: What are the associated emissions if the electricity generated from the investment would have been generated by a mix of fossil fuels instead? The calculations are based on the emissions factors provided by <a href="http://srren.ipcc-wg3.de/report/IPCC_SRREN_Annex_II.pdf" target="_blank">IPCC</a> (in grams CO2 equivalent/kWh). The results are based on life-cycle emissions generated by the power plants funded by the investor.
+</p>
+
+	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+	    <h2 class="darkgreened "><span class="EmissionsAvoided"></span> t CO2eq</h2>
+<p><span class="EmissionsAvoided nowrap">tonnes CO2 equivalent</span> averted by investing in renewables instead of fossil fuels. Equivalent to <span class="timesWorld darkgreened">4</span>&nbsp;times Norway's annual GHG emissions, or <span class=" timesUS darkgreened"></span> times US's annual GHG emissions.</p>
+<img src="img/SVG/Co2.svg" class="globe" width="35%" />
+
+    </div>
+
+  </div>
+</div>
+
+<div class="row whitewrap margTop">
+	<div class="medium-12 large-10 columns large-offset-1 bigPad">
+    <h2 id="results">Results</h2>
+
+<p>This section provides a more comprehensive presentation of the results of your calculations, thanks to five pre-defined graphs. In addition, in the section called “Key results (tables)”, you will find all numbers in a table. This allows you to have a more detailed review as well as to develop other graphs of interest to you.</p>
+<hr />
+<p>This graph shows how much money is invested annually (left bar) and how the investments build up to reach the target (right bar), that is <span class="targetPercent"></span>.</p>
+
+<p> <div class="bigPad" id="TotalInvestmentChart">
+
+  </div>
+
+  <div id="TotalInvestmentChartLink">
+
+  </div>
+</p>
+
+<hr />
+<p>This graph visualizes the energy mix which is used to allocate the investment in every technology (based on the first year of the scenario). In short, the money invested every year are allocated to different technologies for the generation of renewable energy, according to this scheme. This default allocation is based on the International Energy Agency’s scenario for the investmed needed in the next years. Until 2020, the central scenario is used (New Policy Scenario), while after 2020 and until 2040 we chose the 450 scenario, which shows the path needed to limit global warming to 2-degrees Celsius. This is the goal that almost all countries in the world have agreed upon.</p>
+<p>
+  <div class="bigPad" id="PieDist" >
+  </div>
+  <div id="PieDistLink">
+
+  </div>
+</p>
+
+<hr />
+<p>This graph shows how investments are allocated to the various renewable energy technologies. The default allocation or electricity mix is based on the IEA’s energy scenarios. The mix until 2020 is based on a central scenario (New Policy Scenario), while after 2020 and until 2035 it is based on the 450S scenario, which shows the path needed to limit global warming to 2-degrees Celsius.</p>
+
+<p> <div class="bigPad" id="InvestmentChart">
+
+  </div>
+  <div id="InvestmentChartLink">
+
+  </div>
+</p>
+
+<hr />
+<p>This graph shows theoretically how much new capacity is installed every year: this means new solar panels and wind turbines, geothermal plants, hydropower dams, and so on. Electricity generation capacity indicates the maximum electric output a generator can produce.</p>
+
+<p> <div class="bigPad" id="CapacityInstalled">
+
+  </div><div id="CapacityInstalledLink">
+
+  </div>
+</p>
+
+
+<hr />
+<p>This graph shows the theoretical amount of electricity generated every year for the lifetime of the power plants. In fact, every technology has a different life-cycle (see background table). For example, a hydropower plant is in operation for 50 years, while a wind turbine for 25 years. Data on average lifetime is provided by  <a href="http://srren.ipcc-wg3.de/report/IPCC_SRREN_Annex_II.pdf" target="_blank">IPCC</a>, and the user can edit it. This graph also lets you compare the annual electricity generation to a number of your choice. For example, youone can choose to compare it to the annual electricity generation of a country, or a city, or a power plant.</p>
+<p><div class="bigPad" id="ImpactChart">
+
+  </div>
+  <label id="ComparisonFieldLabel" for="ComparisonField" >Here you can choose a comparison figure to give meaning to the graph. We provide some examples, but feel free to choose what you prefer. <a href="https://www.cia.gov/library/publications/the-world-factbook/fields/2232.html#64" target="_blank">On this page</a> you find a list of all countries' annual power generation. </label>
+  <input id="ComparisonField" type="text" name="comparison" data-id="comparison" data-format="0,000"  >
+  <div id="ImpactChartLink">
+
+  </div>
+</p>
+
+  </div>
+</div>
+
+<div class="row whitewrap margTop">
+	<div class="medium-12 large-10 columns large-offset-1 bigPad">
+    
+<h2 >BACKGROUND DATA</h2>
+
+<p>This model relies on different datasets provided by the Intergovernmental Panel on Climate Change (IPCC) and the International Energy Agency (IEA). These contain information on how many years a typical power plant is in operation, how many hours per year the generator is producing electricity, the emissions generated by different technologies, and the costs of building different types of power plants.
+</p>
+
+<p>The following tables includes all background data we use. You are of course free to edit it and make your own assumptions. Please let us know if you find more updated sources. Changes are automatically saved. You can download the tables in a .tsv format, which can be <a href="http://www.arj.no/2013/06/28/how-to-import-tsv-file-in-ms-excel/" target="_blanck">easily imported in excel or other office suites.</a></p>
+
+  </div>
+</div>
+
+<div class="row ">
+	<ul class="accordion" data-accordion>
+
+
+	<li class="accordion-navigation">
+	  <a href="index.html#panel1a">Background Data Tables</a>
+	  <div id="panel1a" class="content">
+
+      <h2>Investment Forecast </h2>
+      <div id="GrowthRateDataTable"></div>
+      <a id="DownloadGrowthRateData" href="index.html#">Download data</a>
+      <p>Table 1 shows all figures relative to the investor’s size, its growth forecast (CAGR) and the annual investments that will be made in renewables</p>
+
+
+      <h2>Background data</h2>
+      <p>Table 2 shows the default data provided by IPCC and used in the model to derive installed capacity, power generation and emissions avoided. See the methodology section for further information.</p>
+      <div id="BackgroundData"></div>
+      <a id="DownloadBackgroundData" href="index.html#">Download data</a>
+
+
+      <h2>Electricity Data Table</h2>
+      <div id="EMix"></div>
+      <a id="DownloadEMixData" href="index.html#">Download data</a>
+      <p>Table 3 shows the energy scenario, based on the World Energy Outlook (2014) published by the IEA. This tables provided the electricity mix that is used to allocate the funding to different technologies.</p>
+
+      <h2>Comparison numbers</h2>
+      <p>Table 4 provides some general comparison figures, used in the infpographics.</p>
+      <div id="ComparisonsTable">
+      </div>
+      <a id="DownloadComparisonsTable" href="index.html#">Download data</a>
+
+      
+	  </div>
+	</li>
+
+
+</ul>
+
+</div>
+
+
+<div class="row whitewrap margTop">
+	<div class="medium-12 large-10 columns large-offset-1 bigPad">
+    <h2 id="key-results-of-the-model-for-every-renewable-energy-technology">Key results (tables)</h2>
+
+<p>In addition to the graphical representations of the main results, we provide a full overview of the numbers. Please expand the tables to get a detailed description.
+</p>
+
+  </div>
+</div>
+
+<div class="row ">
+	<ul class="accordion" data-accordion>
+
+    
+	
+	<li class="accordion-navigation">
+	  <a href="index.html#panel2a">Results Tables</a>
+	  <div id="panel2a" class="content">
+      
+      <h2>Results</h2>
+      <div id="SharesDataTable"></div>
+      <a id="DownloadSharesDataData" href="index.html#">Download data</a>
+      
+      <h2>Annual power generation from <span class="years">5</span> years of investments</h2>
+      <div id="ImpactDataTable"></div>
+      <a id="DownloadImpactDataTable" href="index.html#">Download data</a>
+	  </div>
+	</li>
+  
+ 
+</ul>   
+
+</div>
+
+<div class="row whitewrap margTop">
+	<div class="medium-12 large-10 columns large-offset-1 bigPad">
+    <h2 id="methodology">Methodology</h2>
+
+<p>Here we provide a short summary describing the modelling approach used in this calculator. For a more complete description of the methodology.</p>
+
+<p><h3>Sources of data</h3></p>
+<p>All data used in the calculator are provided by the  <a href="http://www.worldenergyoutlook.org/publications/weo-2014/" target="_blank">International Energy Agency (IEA)</a> and the <a href="http://www.ipcc.ch/" target="_blank">Intergovernmental Panel on Climate Change (IPCC)</a>.</p>
+
+<p><h3>Amount of investment</h3></p>
+<p>The first step in our modelling approach is to define the amount of investment that will form the basis for the subsequent calculations. In the calculator, you specify the market value of the fund(s) that you would like to test in your analysis. In addition, you specify a percentage share of that total market value which will be allocated directly to renewable energy investments.</p>
+<p>Considering that this is a time-series analysis, it may also be relevant to insert a certain growth rate of the fund. The calculator allows you to insert a compound annual growth rate (CAGR). Such data may be publicly available. Please note that by default CAGR in the calculator is set to 0 percent.</p>
+<p>We assume that the investor starts to invest in the first year and linearly build up to reach the target. For example, for a case where the investment starts in 2016 and where a target of 5 percent is set by 2020, the fund will invest 1 percent of its value every year for five years. For this modelling period, it is assumed that investments dedicated to infrastructure projects are “locked”, that is, once invested in one year, that financing is tied to a specific project throughout the modelling period.
+</p>
+
+<p><h3>Allocating investments to different technologies</h3></p>
+<p>The annual investments are allocated to different renewable energy technologies in accordance with their derived share of the world’s annual added electrical capacity. The renewable energy mix used here is taken from the IEA’s World Energy Outlook 2014, where different climate scenarios are presented. Based on the data available, the calculator incorporates the IEA’s central scenario, called “New Policy Scenario” (NPS) for the period 2016-2019. For the year 2020-2035, the calculator incorporates data from the 450 scenario (450S). This implies that the larger part of investments will go to wind power, followed by hydropower and solar PV. These three technologies will attract approximately 90 percent of annual investment for the whole period.
+</p>
+
+<p><h3>Estimation of added renewable energy capacity and associated electricity output</h3></p>
+<p>Once the amount of investment has been registered, the model calculates the new electricity generation capacity. Put differently: it estimates the typical amount of electricity generated from each technology. To calculate this, the model relies on three variables, all provided by  <a href="http://srren.ipcc-wg3.de/report/IPCC_SRREN_Annex_II.pdf" target="_blank">IPCC</a>:
+
+<p>1) Overnight capital cost (in USD/kW), which indicates the cost of building a power plant overnight as if there were no cost of capital.</p>
+
+<p>2) Capacity utilization/full load hours (in hours): it expresses, for each technology, the number of hours that a generator would spend at full load if it always operated at that level.</p>
+
+<p>3) Plant lifetime (in years), the number of years a typical power plant will be functioning.</p>
+<p>The added capacity will be represented by new hydropower plants, solar plants, wind parks, geothermal facilities, and so on. These plants will generate a given amount of clean electricity every year. Based on this, we finally calculate the total electricity generated over the lifetime of the power plant.
+</p>
+
+<p>It is important to note that this is not a practical investment case since there are a host of variables that would influence the actual financial viability of renewable energy projects, such as the presence of unforeseen costs during construction, financial costs, regulatory frameworks, and more. It should also be noted that we do not include future forecasts on how these factors will change due to technological progress, for instance reduced construction costs, increased efficiency and prolonged lifetime of the plants.
+
+<p><h3>Estimating averted emissions</h3></p>
+<p>To illustrate the potential effect that the new renewable-based electricity generation capacity can have on greenhouse gas emissions (measured in carbon dioxide equivalent, CO2 eq.), we ask the following question: What are the associated theoretically averted GHG emissions if the electricity generated from renewables would have instead been generated from a mix of fossil fuels?</p>
+
+<p>To estimate this, we use emissions factors provided by  <a href="http://srren.ipcc-wg3.de/report/IPCC_SRREN_Annex_II.pdf" target="_blank">IPCC</a> (Table A.III.2), which define the GHG emissions produced to generate 1 kWh generated of electricity with different technologies, both renewables and fossil-based. Using the emission factors, we calculate emissions theoretically averted if the same amount of electricity would have been instead generated using a mix of coal, oil and gas. The lifetime emission produced by fossil fuels is then matched against the lifetime emission produced by renewable energy, and the difference between these emission levels constitute the amount of averted emissions.</p>
+
+  </div>
+</div>
+
+<div class="row whitewrap margTop">
+	<div class="medium-12 large-10 columns large-offset-1 bigPad">
+        <h2 id="wwf-norways-report">WWF-Norway’s report</h2>
+
+    <p>WWF's Norway report <i>“Five percent renewable energy investments in a two degrees world”</i> was published in November 2015, and presents the model and some hypothetical case studies in which large institutional investors (pension funds, sovereign wealth fund, etc) invest a given amount of money in renewable energy infrastructure: solar and wind farms, geothermal plants, bioenergy, hydropower, marine. The model uses the latest data from the most authoritative sources, such as the International Energy Agency (IEA) and the Intergovernmental Panel on Climate Change (IPCC).</p> <p>Click on the image to read the report online, or  <a href="http://www.wwf.no/recalc/" target="_blank">click here</a> to download it.</p>
+
+<h2><p><div data-configid="3173995/31013675" style="width:525px; height:371px;" class="issuuembed"></div>
+  <script type="text/javascript" src="http://e.issuu.com/embed.js" async="true"></script></p></h2>
+
+    <p>The report is accompanied by some infographics that summarize the main results for two case studies: Norway's sovereign wealth fund (GPFG) and all signatories of UNPRI. Click on the images to see the infographics online, or <a href="http://www.wwf.no/recalc/" target="_blank">click here</a> to download them.</p>
+<p>
+<div data-configid="3173995/31151168" style="width:350px; height:247px;" class="issuuembed"></div>
+<script type="text/javascript" src="http://e.issuu.com/embed.js" async="true"></script></p>
+UNPRI (EN)
+
+<p>
+<div data-configid="3173995/31151233" style="width:350px; height:247px;" class="issuuembed"></div>
+<script type="text/javascript" src="http://e.issuu.com/embed.js" async="true"></script>
+</p>
+GPFG (EN)
+
+<p>
+<div data-configid="3173995/31151259" style="width:350px; height:247px;" class="issuuembed"></div>
+<script type="text/javascript" src="http://e.issuu.com/embed.js" async="true"></script>
+</p>
+GPFG (NO)
+
+  </div>
+</div>
+
+<div class="row whitewrap margTop">
+	<div class="medium-12 large-10 columns large-offset-1 bigPad">
+    <h2 id="about">ABOUT</h2>
+
+<p>WWF is the world’s leading independent conservation organization, working in more than 100 countries in 6 continents. Over 5 million people support our work.
+  Our mission is to build a future in which people live in harmony with nature.
+  We’re striving to safeguard the natural world, helping people live more sustainably and take action against climate change. </p>
+<p>WWF works worldwide to promote solutions, and renewable energy is one of these.
+  WWF-Norway is asking the Norwegian sovereign wealth fund - the world’s largest with over USD 850 billion - to invest at least 5 percent in renewable energy infrastructure. </p>
+<p>For more information on our work, the report, and the web-calculator, please contact: </p>
+<ul>
+  <li>Lars Erik Mangset, Senior advisor sustainable finance, WWF Norway. Mail: <a href="mailto:lemangset@wwf.no?cc=sesposito@wwf.no&Subject=Webcalculator" target="_top">lemangset@wwf.no</a></li>
+  <li>Stefano Esposito, Advisor sustainable finance, WWF Norway. Mail: <a href="mailto:sesposito@wwf.no?cc=lemangset@wwf.no&Subject=Webcalculator" target="_top">sesposito@wwf.no</a></li>
+
+  </div>
+</div>
+
+
+        
+      </div>
+    </div>
+
+    <div class="row footer margTop">
+
+    
+  <div class="medium-2 columns container">
+    <img src="img/WWF.png" class="footerlogo"  />
+  </div>
+    <div class="medium-10 columns ">
+    <p class="tagline">En framtid der mennesker lever i harmoni med naturen.</p>
+    
+    <ul class="auxiliary-nav">
+      
+      <li><a href="http://www.wwf.no/personvern/">Personvern</a></li>
+      
+      <li><a href="http://www.wwf.no/etterbruk_av_innhold/">Etterbruk av innhold</a></li>
+      
+      <li><a href="http://www.wwf.no/andre_wwf_sider/">Andre WWF sider</a></li>
+      
+      <li><a href="http://www.wwf.no/tilbakemeldinger/">Tilbakemeldinger</a></li>
+      
+      <li><a href="http://www.wwf.no/aom_wwf_no/">Om wwf.no</a></li>
+      
+      <li><a href="http://www.wwf.no/rss.cfm">RSS/Web Feeds</a></li>
+    </ul>
+    
+    <p class="meta">Photos and graphics © WWF or used with permission. Text available under a <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.no" target="_blank">Creative Commons licence</a>. Web design and development by 
+  <a target="_blank" href="http://www.edisonmenlo.no"> Edison Menlo</a> and 
+  <a target="_blank" href="http://www.etn.no">Erik Tanche Nilssen As.</a></p>
+  </div>
+</div>
+ 
+
+<!--
+    Edison Menlo designed and developed the web app, based on the designs of Erik Tanche Nilssen, WWF's report and WWF's spreadsheet. 
+    
+    www.wwf.no
+    www.etn.no
+    http://www.edisonmenlo.no
+    
+  -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-189268-228', 'auto');
+  ga('send', 'pageview');
+  
+</script>
+
+
+	  
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/handsontable.full.min.js"></script>
+    <script src="js/FileSaver.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/scale.fix.js"></script>
+    <script src="js/jquery.handsontable.csv.js"></script>    
+
+  </body>
+</html>
